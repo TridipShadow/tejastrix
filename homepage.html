@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Garden</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo2.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Take a Quiz</a></li>
+                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="#">Browse</a></li>
+                <li><a href="#"></a></li> -->
+               
+            </ul>
+        </nav>
+       
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Background Image Section -->
+        <div class="background-section">
+           
+            <div class="search-section">
+                <h1>3D Virtual Herbal Garden</h1>
+                <p>"The most convenient place to have a herb garden is usually outside the kitchen door"</p>
+                <div class="search-bar">
+                    <!-- <input type="text" placeholder="Search for any herbs or plants">
+                    <button>Search</button> -->
+                    <button class="explorebtn"><a href="avijnan.html?plant=aloe">Explore</a></button>
+                    <button class="maps-btn"><a href="map.html">India's Herbal Garden</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Slider Section -->
+        <section class="slider">
+            <div class="plant"><img src="alovera.jfif" alt="Plant 1"></div>
+            <div class="plant"><img src="tulsi.jpg" alt="Plant 2"></div>
+            <div class="plant"><img src="pudina.jfif" alt="Plant 3""></div>
+            <div class="plant"><img src="neem.jfif" alt="Plant 4""></div>
+        </section>
+    </main>
+
+    <!-- Help Button -->
+    <button class="help-btn">Help</button>
+
+    <!-- Slick Slider JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true
+            });
+        });
+    </script>
+
+</body>
+</html>

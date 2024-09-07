@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c936013e78182998997618a2fa480254 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c936013e78182998997618a2fa480254" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c936013e78182998997618a2fa480254 = L.map(
+                "map_c936013e78182998997618a2fa480254",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_677523d2a6babf1759bb26990a4f7490 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_677523d2a6babf1759bb26990a4f7490.addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var marker_d9d7ee5bfd01dd98baaf21d5e010529f = L.marker(
+                [17.3616, 78.4747],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_d9d065439078a44f308e65711921d30d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d9d7ee5bfd01dd98baaf21d5e010529f.setIcon(icon_d9d065439078a44f308e65711921d30d);
+        
+    
+        var popup_2bafc69e3c2c5ecb4de349c259fd7174 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0711beb8759633faeec2c88ce632d5c9 = $(`<div id="html_0711beb8759633faeec2c88ce632d5c9" style="width: 100.0%; height: 100.0%;">Andhra Pradesh: Neem, Tulsi</div>`)[0];
+                popup_2bafc69e3c2c5ecb4de349c259fd7174.setContent(html_0711beb8759633faeec2c88ce632d5c9);
+            
+        
+
+        marker_d9d7ee5bfd01dd98baaf21d5e010529f.bindPopup(popup_2bafc69e3c2c5ecb4de349c259fd7174)
+        ;
+
+        
+    
+    
+            var marker_acacb15877be4dad409bbca3245cc21e = L.marker(
+                [27.0943, 93.1805],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_d28f2094cbeede7051cfdc9918c0c265 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_acacb15877be4dad409bbca3245cc21e.setIcon(icon_d28f2094cbeede7051cfdc9918c0c265);
+        
+    
+        var popup_b94022696dc0d7f2dbe8ed50d0412fc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a153a2cb8ff743976d4848ab4f09c162 = $(`<div id="html_a153a2cb8ff743976d4848ab4f09c162" style="width: 100.0%; height: 100.0%;">Arunachal Pradesh: Ashwagandha, Ginger</div>`)[0];
+                popup_b94022696dc0d7f2dbe8ed50d0412fc3.setContent(html_a153a2cb8ff743976d4848ab4f09c162);
+            
+        
+
+        marker_acacb15877be4dad409bbca3245cc21e.bindPopup(popup_b94022696dc0d7f2dbe8ed50d0412fc3)
+        ;
+
+        
+    
+    
+            var marker_b594e28dadf6abe3c8a66ba9487d98a7 = L.marker(
+                [26.2006, 92.9376],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_db34d9024a90c9e8488f45c4104b0353 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b594e28dadf6abe3c8a66ba9487d98a7.setIcon(icon_db34d9024a90c9e8488f45c4104b0353);
+        
+    
+        var popup_ab9dc424fff0bbeb67138b16aea58320 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bce6312b43f74b1ff785a4569eb04c61 = $(`<div id="html_bce6312b43f74b1ff785a4569eb04c61" style="width: 100.0%; height: 100.0%;">Assam: Turmeric, Tulsi</div>`)[0];
+                popup_ab9dc424fff0bbeb67138b16aea58320.setContent(html_bce6312b43f74b1ff785a4569eb04c61);
+            
+        
+
+        marker_b594e28dadf6abe3c8a66ba9487d98a7.bindPopup(popup_ab9dc424fff0bbeb67138b16aea58320)
+        ;
+
+        
+    
+    
+            var marker_d3cfa1596b7d590221fef9ad2965fed3 = L.marker(
+                [25.0961, 85.3131],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_b4ed6f84e841f34496ff6e41a9520d3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d3cfa1596b7d590221fef9ad2965fed3.setIcon(icon_b4ed6f84e841f34496ff6e41a9520d3e);
+        
+    
+        var popup_63286488b5662ce8d6a3486b63766d7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5711a1f5b2099c7e716ebf4a7046e04a = $(`<div id="html_5711a1f5b2099c7e716ebf4a7046e04a" style="width: 100.0%; height: 100.0%;">Bihar: Aloe Vera, Peppermint</div>`)[0];
+                popup_63286488b5662ce8d6a3486b63766d7d.setContent(html_5711a1f5b2099c7e716ebf4a7046e04a);
+            
+        
+
+        marker_d3cfa1596b7d590221fef9ad2965fed3.bindPopup(popup_63286488b5662ce8d6a3486b63766d7d)
+        ;
+
+        
+    
+    
+            var marker_410ee77719ef8a65378912d7be821fab = L.marker(
+                [21.2787, 81.8661],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_78af41aa5c97721b3a5967555a30b2fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_410ee77719ef8a65378912d7be821fab.setIcon(icon_78af41aa5c97721b3a5967555a30b2fe);
+        
+    
+        var popup_754502c979a37ab03739a2ffa4266a25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f55fec700d0697cbf1cb33fdf1307382 = $(`<div id="html_f55fec700d0697cbf1cb33fdf1307382" style="width: 100.0%; height: 100.0%;">Chhattisgarh: Basil, Hibiscus</div>`)[0];
+                popup_754502c979a37ab03739a2ffa4266a25.setContent(html_f55fec700d0697cbf1cb33fdf1307382);
+            
+        
+
+        marker_410ee77719ef8a65378912d7be821fab.bindPopup(popup_754502c979a37ab03739a2ffa4266a25)
+        ;
+
+        
+    
+    
+            var marker_dd7bf4bd9f025d43bf3c78966c85b9b7 = L.marker(
+                [15.2993, 74.124],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_eb58d8254ebd2f5c97d2fba35b683ea2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dd7bf4bd9f025d43bf3c78966c85b9b7.setIcon(icon_eb58d8254ebd2f5c97d2fba35b683ea2);
+        
+    
+        var popup_c951a6a60e56251640e16b5250727939 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a4b399f2d95c76dde4a931b59f79223 = $(`<div id="html_6a4b399f2d95c76dde4a931b59f79223" style="width: 100.0%; height: 100.0%;">Goa: Cardamom, Coriander</div>`)[0];
+                popup_c951a6a60e56251640e16b5250727939.setContent(html_6a4b399f2d95c76dde4a931b59f79223);
+            
+        
+
+        marker_dd7bf4bd9f025d43bf3c78966c85b9b7.bindPopup(popup_c951a6a60e56251640e16b5250727939)
+        ;
+
+        
+    
+    
+            var marker_5270cefb4412201d06f42a2fdc16c241 = L.marker(
+                [23.0225, 72.5714],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_7db1e5262e8ad18d0dcfbfb83daa6cda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5270cefb4412201d06f42a2fdc16c241.setIcon(icon_7db1e5262e8ad18d0dcfbfb83daa6cda);
+        
+    
+        var popup_d94522db19bce30179f48b3657703d5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03071800eaa57adb28368bcd661b3512 = $(`<div id="html_03071800eaa57adb28368bcd661b3512" style="width: 100.0%; height: 100.0%;">Gujarat: Peppermint, Mustard</div>`)[0];
+                popup_d94522db19bce30179f48b3657703d5b.setContent(html_03071800eaa57adb28368bcd661b3512);
+            
+        
+
+        marker_5270cefb4412201d06f42a2fdc16c241.bindPopup(popup_d94522db19bce30179f48b3657703d5b)
+        ;
+
+        
+    
+    
+            var marker_24b460658204716596ebb0bc5c39930d = L.marker(
+                [29.0588, 76.0856],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_f62dfd7128fbf141948c6aa1ae3ecb93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_24b460658204716596ebb0bc5c39930d.setIcon(icon_f62dfd7128fbf141948c6aa1ae3ecb93);
+        
+    
+        var popup_047b0f0d78b8f6b9709e30dd3ee09b3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6427cf50360772061d141deed9272562 = $(`<div id="html_6427cf50360772061d141deed9272562" style="width: 100.0%; height: 100.0%;">Haryana: Fennel, Basil</div>`)[0];
+                popup_047b0f0d78b8f6b9709e30dd3ee09b3f.setContent(html_6427cf50360772061d141deed9272562);
+            
+        
+
+        marker_24b460658204716596ebb0bc5c39930d.bindPopup(popup_047b0f0d78b8f6b9709e30dd3ee09b3f)
+        ;
+
+        
+    
+    
+            var marker_0e6419cb40455d539ef72e4f664c1759 = L.marker(
+                [31.1048, 77.1734],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_1ae553ff976d8e790b9d625b965e1085 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0e6419cb40455d539ef72e4f664c1759.setIcon(icon_1ae553ff976d8e790b9d625b965e1085);
+        
+    
+        var popup_5bc14b3cc8eef0d0e680c6d9e47c4df0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5699945c50a335888c2c9fc333fde728 = $(`<div id="html_5699945c50a335888c2c9fc333fde728" style="width: 100.0%; height: 100.0%;">Himachal Pradesh: Ashwagandha, Ginger</div>`)[0];
+                popup_5bc14b3cc8eef0d0e680c6d9e47c4df0.setContent(html_5699945c50a335888c2c9fc333fde728);
+            
+        
+
+        marker_0e6419cb40455d539ef72e4f664c1759.bindPopup(popup_5bc14b3cc8eef0d0e680c6d9e47c4df0)
+        ;
+
+        
+    
+    
+            var marker_eb25a49aea7381c068589d8e1b734ad9 = L.marker(
+                [23.6102, 85.2799],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_0381ab2121e3ce2068d49cef9ccfb80c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eb25a49aea7381c068589d8e1b734ad9.setIcon(icon_0381ab2121e3ce2068d49cef9ccfb80c);
+        
+    
+        var popup_a3ba7789c5d183010534079badd1a32b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b93a200722c16f76d27b5793b72f998a = $(`<div id="html_b93a200722c16f76d27b5793b72f998a" style="width: 100.0%; height: 100.0%;">Jharkhand: Neem, Turmeric</div>`)[0];
+                popup_a3ba7789c5d183010534079badd1a32b.setContent(html_b93a200722c16f76d27b5793b72f998a);
+            
+        
+
+        marker_eb25a49aea7381c068589d8e1b734ad9.bindPopup(popup_a3ba7789c5d183010534079badd1a32b)
+        ;
+
+        
+    
+    
+            var marker_a73a02e718358d880562745ee7ed3119 = L.marker(
+                [12.9716, 77.5946],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_8372288c9d5a3d75ebf8af77afcfcb61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a73a02e718358d880562745ee7ed3119.setIcon(icon_8372288c9d5a3d75ebf8af77afcfcb61);
+        
+    
+        var popup_35a1147b6ee37d3421eea017c77e4161 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bca27edce300df1b7b80d15c30ff701 = $(`<div id="html_2bca27edce300df1b7b80d15c30ff701" style="width: 100.0%; height: 100.0%;">Karnataka: Aloe Vera, Hibiscus</div>`)[0];
+                popup_35a1147b6ee37d3421eea017c77e4161.setContent(html_2bca27edce300df1b7b80d15c30ff701);
+            
+        
+
+        marker_a73a02e718358d880562745ee7ed3119.bindPopup(popup_35a1147b6ee37d3421eea017c77e4161)
+        ;
+
+        
+    
+    
+            var marker_c27504ef0fd7baf368586d05fe864134 = L.marker(
+                [10.8505, 76.2711],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_e661d1904fa2d6bb95285d42d7ef05e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c27504ef0fd7baf368586d05fe864134.setIcon(icon_e661d1904fa2d6bb95285d42d7ef05e3);
+        
+    
+        var popup_d86379d9bf1e10bcda828610234a895e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dd9e7e98f51b1a982f1f354d76f6b02 = $(`<div id="html_7dd9e7e98f51b1a982f1f354d76f6b02" style="width: 100.0%; height: 100.0%;">Kerala: Cardamom, Peppermint</div>`)[0];
+                popup_d86379d9bf1e10bcda828610234a895e.setContent(html_7dd9e7e98f51b1a982f1f354d76f6b02);
+            
+        
+
+        marker_c27504ef0fd7baf368586d05fe864134.bindPopup(popup_d86379d9bf1e10bcda828610234a895e)
+        ;
+
+        
+    
+    
+            var marker_0472ff89f96a28d6fd47c15028e2b24b = L.marker(
+                [23.2599, 77.4126],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_b6021618de8361999878753a334e4705 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0472ff89f96a28d6fd47c15028e2b24b.setIcon(icon_b6021618de8361999878753a334e4705);
+        
+    
+        var popup_b1b228f06daa058d11b3e928c00f5863 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1cb177f13411fa71eaf99ece5562e77 = $(`<div id="html_f1cb177f13411fa71eaf99ece5562e77" style="width: 100.0%; height: 100.0%;">Madhya Pradesh: Neem, Sarpagandha</div>`)[0];
+                popup_b1b228f06daa058d11b3e928c00f5863.setContent(html_f1cb177f13411fa71eaf99ece5562e77);
+            
+        
+
+        marker_0472ff89f96a28d6fd47c15028e2b24b.bindPopup(popup_b1b228f06daa058d11b3e928c00f5863)
+        ;
+
+        
+    
+    
+            var marker_9230a8aacdeb7b32aa92551e53060f47 = L.marker(
+                [19.7515, 75.7139],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_8a0d4dbc85b0d92398eb0adfd0c9fe1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9230a8aacdeb7b32aa92551e53060f47.setIcon(icon_8a0d4dbc85b0d92398eb0adfd0c9fe1e);
+        
+    
+        var popup_813fa3ed43b6f6926548ee7446fa82c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_884c7e34d7d7fbea15b8c92e5ddaf423 = $(`<div id="html_884c7e34d7d7fbea15b8c92e5ddaf423" style="width: 100.0%; height: 100.0%;">Maharashtra: Ashwagandha, Giloy</div>`)[0];
+                popup_813fa3ed43b6f6926548ee7446fa82c0.setContent(html_884c7e34d7d7fbea15b8c92e5ddaf423);
+            
+        
+
+        marker_9230a8aacdeb7b32aa92551e53060f47.bindPopup(popup_813fa3ed43b6f6926548ee7446fa82c0)
+        ;
+
+        
+    
+    
+            var marker_667f22d8d651e3ead5d77deb9aa5deb5 = L.marker(
+                [24.6637, 93.9063],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_a53b4d6974a9aab27271b0631bd050bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_667f22d8d651e3ead5d77deb9aa5deb5.setIcon(icon_a53b4d6974a9aab27271b0631bd050bc);
+        
+    
+        var popup_c2ea09483340d195e4fa0c2d8e3470b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db8fae4a50047cd8ef5f616b4b54f890 = $(`<div id="html_db8fae4a50047cd8ef5f616b4b54f890" style="width: 100.0%; height: 100.0%;">Manipur: Basil, Turmeric</div>`)[0];
+                popup_c2ea09483340d195e4fa0c2d8e3470b7.setContent(html_db8fae4a50047cd8ef5f616b4b54f890);
+            
+        
+
+        marker_667f22d8d651e3ead5d77deb9aa5deb5.bindPopup(popup_c2ea09483340d195e4fa0c2d8e3470b7)
+        ;
+
+        
+    
+    
+            var marker_f9c4308df2227d3dfaeee0f4c12a5e7f = L.marker(
+                [25.467, 91.3662],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_8ab4e9b3ef3cf42c1e2119f07d0249df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f9c4308df2227d3dfaeee0f4c12a5e7f.setIcon(icon_8ab4e9b3ef3cf42c1e2119f07d0249df);
+        
+    
+        var popup_0f1ef41c64236ccccb5466b4348ad852 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7724a69dac963e67f1566a7d2d43bc69 = $(`<div id="html_7724a69dac963e67f1566a7d2d43bc69" style="width: 100.0%; height: 100.0%;">Meghalaya: Peppermint, Ginger</div>`)[0];
+                popup_0f1ef41c64236ccccb5466b4348ad852.setContent(html_7724a69dac963e67f1566a7d2d43bc69);
+            
+        
+
+        marker_f9c4308df2227d3dfaeee0f4c12a5e7f.bindPopup(popup_0f1ef41c64236ccccb5466b4348ad852)
+        ;
+
+        
+    
+    
+            var marker_48f50118c4d3751862cb89214675836b = L.marker(
+                [23.1645, 92.9376],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_2df4891b1cd00e2f42abb928dc4adbcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_48f50118c4d3751862cb89214675836b.setIcon(icon_2df4891b1cd00e2f42abb928dc4adbcf);
+        
+    
+        var popup_00c30431ad20a5300b71288c30337841 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76a73e30696e0af1edf59f7c3cc77338 = $(`<div id="html_76a73e30696e0af1edf59f7c3cc77338" style="width: 100.0%; height: 100.0%;">Mizoram: Tulsi, Cardamom</div>`)[0];
+                popup_00c30431ad20a5300b71288c30337841.setContent(html_76a73e30696e0af1edf59f7c3cc77338);
+            
+        
+
+        marker_48f50118c4d3751862cb89214675836b.bindPopup(popup_00c30431ad20a5300b71288c30337841)
+        ;
+
+        
+    
+    
+            var marker_ffc0d98230d32dd944bcd12b146ec91c = L.marker(
+                [26.1584, 94.5624],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_6f01bab1529a2ecd6a723545f0de87f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ffc0d98230d32dd944bcd12b146ec91c.setIcon(icon_6f01bab1529a2ecd6a723545f0de87f2);
+        
+    
+        var popup_83c9a1673eaa7aac828693514a8d6c1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f45c56f20e710eec554ff4746dcb561 = $(`<div id="html_7f45c56f20e710eec554ff4746dcb561" style="width: 100.0%; height: 100.0%;">Nagaland: Aloe Vera, Sarpagandha</div>`)[0];
+                popup_83c9a1673eaa7aac828693514a8d6c1c.setContent(html_7f45c56f20e710eec554ff4746dcb561);
+            
+        
+
+        marker_ffc0d98230d32dd944bcd12b146ec91c.bindPopup(popup_83c9a1673eaa7aac828693514a8d6c1c)
+        ;
+
+        
+    
+    
+            var marker_79218b56d70e98c36244f6f3205c33b0 = L.marker(
+                [20.9517, 85.0985],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_21285ec46a5d55b593ff8111d7e74dc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_79218b56d70e98c36244f6f3205c33b0.setIcon(icon_21285ec46a5d55b593ff8111d7e74dc1);
+        
+    
+        var popup_a6561fde1e3370385fb9a3a3349991d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65ed87f4378bdd6e9190852c8944edb0 = $(`<div id="html_65ed87f4378bdd6e9190852c8944edb0" style="width: 100.0%; height: 100.0%;">Odisha: Turmeric, Basil</div>`)[0];
+                popup_a6561fde1e3370385fb9a3a3349991d9.setContent(html_65ed87f4378bdd6e9190852c8944edb0);
+            
+        
+
+        marker_79218b56d70e98c36244f6f3205c33b0.bindPopup(popup_a6561fde1e3370385fb9a3a3349991d9)
+        ;
+
+        
+    
+    
+            var marker_d213822e89213371f00deb193fb55a96 = L.marker(
+                [31.1048, 75.293],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_192ecaf86e6a23c6ff17169fb3d53588 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d213822e89213371f00deb193fb55a96.setIcon(icon_192ecaf86e6a23c6ff17169fb3d53588);
+        
+    
+        var popup_428516f17e5ad096954b8df6bc829348 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b971edd02f59eb26706b8964fb84f51 = $(`<div id="html_1b971edd02f59eb26706b8964fb84f51" style="width: 100.0%; height: 100.0%;">Punjab: Fennel, Mustard</div>`)[0];
+                popup_428516f17e5ad096954b8df6bc829348.setContent(html_1b971edd02f59eb26706b8964fb84f51);
+            
+        
+
+        marker_d213822e89213371f00deb193fb55a96.bindPopup(popup_428516f17e5ad096954b8df6bc829348)
+        ;
+
+        
+    
+    
+            var marker_ab3b7cdf1c832962a6247fc9f6eb46fa = L.marker(
+                [26.9124, 75.7873],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_135c309964fb14da0a6043f2e44329fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ab3b7cdf1c832962a6247fc9f6eb46fa.setIcon(icon_135c309964fb14da0a6043f2e44329fe);
+        
+    
+        var popup_4c2bceb46dd505d39b19b03d2ddc2ae6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1044ccf9ed331fb3343f5b8c47a393e2 = $(`<div id="html_1044ccf9ed331fb3343f5b8c47a393e2" style="width: 100.0%; height: 100.0%;">Rajasthan: Neem, Ashwagandha</div>`)[0];
+                popup_4c2bceb46dd505d39b19b03d2ddc2ae6.setContent(html_1044ccf9ed331fb3343f5b8c47a393e2);
+            
+        
+
+        marker_ab3b7cdf1c832962a6247fc9f6eb46fa.bindPopup(popup_4c2bceb46dd505d39b19b03d2ddc2ae6)
+        ;
+
+        
+    
+    
+            var marker_41effc459f2617c62915ec3a040e0d13 = L.marker(
+                [27.533, 88.5122],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_900dd6a67d4bba4be3be72907c23128e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_41effc459f2617c62915ec3a040e0d13.setIcon(icon_900dd6a67d4bba4be3be72907c23128e);
+        
+    
+        var popup_3803a9217c890c6d38d77b8d944a2c01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8cda444feb186f80e69a76e55dc2207 = $(`<div id="html_f8cda444feb186f80e69a76e55dc2207" style="width: 100.0%; height: 100.0%;">Sikkim: Ginger, Peppermint</div>`)[0];
+                popup_3803a9217c890c6d38d77b8d944a2c01.setContent(html_f8cda444feb186f80e69a76e55dc2207);
+            
+        
+
+        marker_41effc459f2617c62915ec3a040e0d13.bindPopup(popup_3803a9217c890c6d38d77b8d944a2c01)
+        ;
+
+        
+    
+    
+            var marker_cfc281f55c82a1d5a5762bc5f10f881e = L.marker(
+                [13.0827, 80.2707],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_47fdd73330144f1f4622c449b4e5e246 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cfc281f55c82a1d5a5762bc5f10f881e.setIcon(icon_47fdd73330144f1f4622c449b4e5e246);
+        
+    
+        var popup_3c2e80816810bde37d40e28bbe67f781 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af1b9630c09cb95187d09d2ce707381c = $(`<div id="html_af1b9630c09cb95187d09d2ce707381c" style="width: 100.0%; height: 100.0%;">Tamil Nadu: Ginger, Coriander</div>`)[0];
+                popup_3c2e80816810bde37d40e28bbe67f781.setContent(html_af1b9630c09cb95187d09d2ce707381c);
+            
+        
+
+        marker_cfc281f55c82a1d5a5762bc5f10f881e.bindPopup(popup_3c2e80816810bde37d40e28bbe67f781)
+        ;
+
+        
+    
+    
+            var marker_8a492e30e8cf252d932c4205084336de = L.marker(
+                [17.1232, 79.2085],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_236cf345523bee1f29ad832af472c3a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8a492e30e8cf252d932c4205084336de.setIcon(icon_236cf345523bee1f29ad832af472c3a7);
+        
+    
+        var popup_db21d1db49f0eea10f9109a4a33a0619 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d59f4ddc0301d85ebc54b28cf1c8ff4 = $(`<div id="html_0d59f4ddc0301d85ebc54b28cf1c8ff4" style="width: 100.0%; height: 100.0%;">Telangana: Neem, Tulsi</div>`)[0];
+                popup_db21d1db49f0eea10f9109a4a33a0619.setContent(html_0d59f4ddc0301d85ebc54b28cf1c8ff4);
+            
+        
+
+        marker_8a492e30e8cf252d932c4205084336de.bindPopup(popup_db21d1db49f0eea10f9109a4a33a0619)
+        ;
+
+        
+    
+    
+            var marker_f28c675ae59f5d8b6e2aca55870269c8 = L.marker(
+                [23.9408, 91.9882],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_f46c1696fddce44efef6a0db128c8542 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f28c675ae59f5d8b6e2aca55870269c8.setIcon(icon_f46c1696fddce44efef6a0db128c8542);
+        
+    
+        var popup_800c3aed65aaee8af7081d210eceb919 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57b24cb27bf72369fc309a8915727a9a = $(`<div id="html_57b24cb27bf72369fc309a8915727a9a" style="width: 100.0%; height: 100.0%;">Tripura: Turmeric, Cardamom</div>`)[0];
+                popup_800c3aed65aaee8af7081d210eceb919.setContent(html_57b24cb27bf72369fc309a8915727a9a);
+            
+        
+
+        marker_f28c675ae59f5d8b6e2aca55870269c8.bindPopup(popup_800c3aed65aaee8af7081d210eceb919)
+        ;
+
+        
+    
+    
+            var marker_c2327113187f009a5ce709d9771372a0 = L.marker(
+                [26.8467, 80.9462],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_909ca57d36b6d85146e23a07babc946c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c2327113187f009a5ce709d9771372a0.setIcon(icon_909ca57d36b6d85146e23a07babc946c);
+        
+    
+        var popup_c7f6d6e14ddf2af4dbcaa7107ebdc4f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a619b7b0090580ef354b84e6bb66b806 = $(`<div id="html_a619b7b0090580ef354b84e6bb66b806" style="width: 100.0%; height: 100.0%;">Uttar Pradesh: Brahmi, Sarpagandha</div>`)[0];
+                popup_c7f6d6e14ddf2af4dbcaa7107ebdc4f8.setContent(html_a619b7b0090580ef354b84e6bb66b806);
+            
+        
+
+        marker_c2327113187f009a5ce709d9771372a0.bindPopup(popup_c7f6d6e14ddf2af4dbcaa7107ebdc4f8)
+        ;
+
+        
+    
+    
+            var marker_7057db2276b3f1bc9f5ec4c1ac29b03c = L.marker(
+                [30.0668, 79.0193],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_d9237832b6aaf591be2f3f389e110ddf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7057db2276b3f1bc9f5ec4c1ac29b03c.setIcon(icon_d9237832b6aaf591be2f3f389e110ddf);
+        
+    
+        var popup_cd6c5e2dc9c9d5ccdfcd5fbfd838c861 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e329ddd8d8f7a1cfb953619e09987e4c = $(`<div id="html_e329ddd8d8f7a1cfb953619e09987e4c" style="width: 100.0%; height: 100.0%;">Uttarakhand: Ashwagandha, Basil</div>`)[0];
+                popup_cd6c5e2dc9c9d5ccdfcd5fbfd838c861.setContent(html_e329ddd8d8f7a1cfb953619e09987e4c);
+            
+        
+
+        marker_7057db2276b3f1bc9f5ec4c1ac29b03c.bindPopup(popup_cd6c5e2dc9c9d5ccdfcd5fbfd838c861)
+        ;
+
+        
+    
+    
+            var marker_cd113154b55ebce6be25aec28e2933c7 = L.marker(
+                [22.5726, 88.3639],
+                {}
+            ).addTo(map_c936013e78182998997618a2fa480254);
+        
+    
+            var icon_2daab5c930a2ea91599a579c862bb095 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cd113154b55ebce6be25aec28e2933c7.setIcon(icon_2daab5c930a2ea91599a579c862bb095);
+        
+    
+        var popup_b86a7e29355d027e49025f8170a2c9e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d12a10f4892404044b18ded321c60fef = $(`<div id="html_d12a10f4892404044b18ded321c60fef" style="width: 100.0%; height: 100.0%;">West Bengal: Cardamom, Turmeric</div>`)[0];
+                popup_b86a7e29355d027e49025f8170a2c9e5.setContent(html_d12a10f4892404044b18ded321c60fef);
+            
+        
+
+        marker_cd113154b55ebce6be25aec28e2933c7.bindPopup(popup_b86a7e29355d027e49025f8170a2c9e5)
+        ;
+
+        
+    
+</script>
+</html>

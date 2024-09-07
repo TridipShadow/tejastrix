@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicinal Plants</title>
+    <style>
+        /* Import modern fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@600&display=swap');
+        
+        /* Base styles */
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: url('bg.png') no-repeat center center fixed;
+            background-size: cover; /* Ensure the background image covers the whole page */
+        }
+
+        /* Navbar (Taskbar) Styling */
+        .btn {
+            padding: 20px 20px; /* Increase padding for larger button */
+            font-size: 18px;    /* Increase text size */
+            border-radius: 8px; /* Optional: add rounded corners */
+            /* Optional: add background color and adjust hover effects */
+            background-color: #c6edc1;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+            margin:50px 500px;
+            }
+
+        .btn:hover {
+            background-color: #0056b3; /* Darker background on hover */
+            color: #ffffff;
+        }
+
+        .navbar {
+            background-color: rgba(0, 50, 30, 0.9); /* Deep, sober green with slight transparency */
+            padding: 15px 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+      
+
+        .navbar h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 26px;
+            color: #F1FAEE; /* Light cream */
+            margin: 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #A8DADC; /* Soft teal */
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .navbar ul li a:hover {
+            color: #F1FAEE; /* Light cream on hover */
+            text-decoration: underline;
+        }
+        .filter-container {
+    margin-left: 1100px; /* Aligns the container, which contains both the button and dropdown */
+    position: relative; /* Establishes a positioned context for the dropdown */
+}
+
+.filter {
+    background-color: #9aee9a;
+    margin-left:200px;
+    color: black;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 10px; /* Space between image and text */
+}
+
+.button-icon {
+    width: 16px; /* Decrease the width */
+    height: 16px; /* Decrease the height */
+}
+
+.filter:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Dropdown content styles */
+.dropdown-content {
+    display: none; /* Initially hidden */
+    background-color: #f9f9f9;
+    min-width: 200px; /* Set minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Add shadow for effect */
+    padding: 10px; /* Padding inside the dropdown */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1; /* Stay above other elements */
+    position: absolute; /* Positioned relative to the filter-container */
+    top: 50px; /* Distance from the button */
+    left: 10; /* Align with the left of the button */
+    margin-left: 130px;
+}
+
+.dropdown-content h3 {
+    margin: 5px 0; /* Adjust spacing around headings */
+}
+
+       /* Main content section */
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 150px 20px 50px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.85); /* Transparent white background for better readability */
+            border-radius: 12px;
+        }
+
+        .content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            color: #004d00; /* Deep green */
+            margin-bottom: 50px;
+        }
+
+        /* Plant list with a more refined design */
+        ul.plant-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background-color: #fff;
+            margin: 15px 0;
+            padding: 20px;
+            font-size: 22px;
+            font-weight: 400;
+            border: 1px solid #E0E0E0; /* Soft border */
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        li:hover {
+            transform: translateY(-4px); /* Lift effect on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+        a {
+            text-decoration: none;
+            color: #004d00; /* Deep green */
+            font-weight: 700;
+            display: block;
+        }
+
+        a:hover {
+            color: #007700; /* Slightly lighter green on hover */
+        }
+
+        /* Footer for a more corporate feel */
+        .footer {
+            background-color: rgba(0, 50, 30, 0.9); /* Deep, sober green with slight transparency */
+            color: #F1FAEE; /* Light cream */
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+<script src="script.js"></script>
+<!-- Navbar -->
+<div class="navbar">
+    <div class="filter-container">
+        <button class="filter" onclick="toggleDropdown()">
+          <img src="filter.png" alt="Filter Icon" class="button-icon">
+          Filter
+        </button>
+      
+        <!-- Dropdown content -->
+        <div id="dropdown-content" class="dropdown-content">
+          <h3>Diseases Cured</h3>
+          <!-- Add content related to "Diseases Cured" here -->
+      
+          <h3>Regions of Cultivation</h3>
+          <!-- Add content related to "Regions of Cultivation" here -->
+        </div>
+      </div>
+      
+</div>      
+<!-- Main Content -->
+<div class="content">
+    <h2>Explore Medicinal Plants</h2>
+    <h3><div><a class="btn" href="plants.html">Take a Look</a></div></h3>
+    <ul class="plant-list">
+        <li><a target="_blank">Aloe Vera (Aloe vera)</a></li>
+        <li><a target="_blank">Dried Belleric Myrobalan (Terminalia bellirica)</a></li>
+        <li><a target="_blank">Dried Indian Gooseberry (Phyllanthus emblica)</a></li>
+        <li><a target="_blank">Black Myrobalan (Terminalia chebula)</a></li>
+        <li><a target="_blank">Mint Leaves (Mentha)</a></li>
+        
+        <li><a target="_blank">Ginger Root (Zingiber officinale)</a></li>
+        <li><a target="_blank">Turmeric (Curcuma longa)</a></li>
+        <li><a target="_blank">Moringa (Moringa oleifera)</a></li>
+        <li><a target="_blank">Neem Tree (Azadirachta indica)</a></li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>
