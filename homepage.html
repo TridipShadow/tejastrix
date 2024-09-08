@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Virtual Garden</title>
     <link rel="stylesheet" href="style.css">
     <!-- Slick Slider CSS -->
@@ -13,6 +15,7 @@
 
     <!-- Header -->
     <header>
+        <div class="logo">Arogya</div>
         <div class="logo">
             <img src="logo2.png" alt="Logo">
         </div>
@@ -20,25 +23,23 @@
             <ul>
                 <li><a href="index.html">Take a Quiz</a></li>
                 <li><a href="about.html">About</a></li>
-                <!-- <li><a href="#">Browse</a></li>
-                <li><a href="#"></a></li> -->
-               
             </ul>
         </nav>
-       
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Background Image Section -->
-        <div class="background-section">
-           
+        <!-- Background Video Section -->
+        <div class="background-video-section">
+            <video autoplay muted loop class="background-video">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
             <div class="search-section">
                 <h1>3D Virtual Herbal Garden</h1>
                 <p>"The most convenient place to have a herb garden is usually outside the kitchen door"</p>
                 <div class="search-bar">
-                    <!-- <input type="text" placeholder="Search for any herbs or plants">
-                    <button>Search</button> -->
                     <button class="explorebtn"><a href="avijnan.html?plant=aloe">Explore</a></button>
                     <button class="maps-btn"><a href="map.html">India's Herbal Garden</a></button>
                 </div>
@@ -47,10 +48,22 @@
 
         <!-- Image Slider Section -->
         <section class="slider">
-            <div class="plant"><img src="alovera.jfif" alt="Plant 1"></div>
-            <div class="plant"><img src="tulsi.jpg" alt="Plant 2"></div>
-            <div class="plant"><img src="pudina.jfif" alt="Plant 3""></div>
-            <div class="plant"><img src="neem.jfif" alt="Plant 4""></div>
+            <div class="plant">
+                <img src="alovera.jfif" alt="Aloe Vera">
+                <p class="plant-name">Aloe Vera</p>
+            </div>
+            <div class="plant">
+                <img src="tulsi.jpg" alt="Tulsi">
+                <p class="plant-name">Tulsi</p>
+            </div>
+            <div class="plant">
+                <img src="pudina.jfif" alt="Mint">
+                <p class="plant-name">Mint Leaves</p>
+            </div>
+            <div class="plant">
+                <img src="neem.jfif" alt="Neem">
+                <p class="plant-name">Neem Tree</p>
+            </div>
         </section>
     </main>
 
@@ -73,5 +86,173 @@
         });
     </script>
 
+    <style>
+    /* Basic reset */
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #073808;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif; /* Adjust as per your font preference */
+    font-weight: bold;
+}
+
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    /* Background Video Styling */
+    .background-video-section {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .background-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .search-section {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        color: white;
+        margin-top: 30vh;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .search-bar {
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: rgb(14, 75, 29);
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        position: relative;
+        font-weight: bold;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* 3D Effect for Buttons */
+    button:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(145deg, #226d37, #0e5e2d);
+        z-index: -1;
+        transition: 0.3s;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    button:hover {
+        transform: translateY(-3px); /* Lift the button up slightly */
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Increase the shadow depth */
+    }
+
+    button:active {
+        transform: translateY(2px); /* Slightly push down when clicked */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soften the shadow when clicked */
+    }
+
+
+    button a {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Image Slider */
+    .slider {
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    .plant {
+        text-align: center;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Styling the plant names */
+    .plant-name {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .help-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 15px;
+        background-color: #184d36;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    </style>
 </body>
 </html>
