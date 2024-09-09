@@ -195,11 +195,13 @@
 
         .modal.show {
             display: flex;
-            opacity: 1;
+            opacity: 5;
         }
 
         .modal-content {
-            background-color: rgba(116, 243, 12, 0.877);
+            background-image: url('popup.avif');
+            background-color: rgba(136, 129, 129, 0.856); /* Black color with 50% opacity */
+            background-blend-mode: overlay; /* Blend mode to overlay the background color with the image */
             padding: 40px;
             border-radius: 10px;
             width: 400px;
@@ -220,7 +222,7 @@
             right: 15px;
             font-size: 25px;
             cursor: pointer;
-            color: #888;
+            color: #fffefe;
         }
 
         .close-btn:hover {
@@ -290,7 +292,7 @@
     <div id="popupModal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <p id="popupMessage"></p>
+            <p id="popupMessage">style="color: white;"</p>
         </div>
     </div>
 
