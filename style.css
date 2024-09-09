@@ -1,10 +1,10 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans Devanagari', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #d6d1d1;
-    color: #333;
+    background-color: #03471d; /* Full background deep green */
+    color: #ffffff; /* White text for better contrast */
 }
 
 /* Header */
@@ -12,9 +12,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #d6d1d1;
-    padding: 0px 10px;
-    color: black;
+    background-color: #03471d; /* Deep green background for header */
+    padding: 15px 20px;
+    color: #ffffff; /* White text */
 }
 
 header .logo img {
@@ -23,9 +23,8 @@ header .logo img {
 
 nav ul {
     list-style: none;
-    margin-left: 850px;
+    margin: 0;
     padding: 0;
-    padding-right: 30px;
     display: flex;
 }
 
@@ -34,7 +33,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #047c04;
+    color: #ffffff; /* White text for navigation */
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -42,7 +41,7 @@ nav ul li a {
 
 /* Background Image Section */
 .background-section {
-    background-image: url('background6.jpg'); /* Replace with your background image */
+    background-image: url('video.mp4'); /* Replace with your background image */
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -75,7 +74,8 @@ nav ul li a {
     width: 200px; /* Consistent button width */
 }
 
-.explorebtn {
+/* Buttons */
+.explorebtn, .maps-btn {
     background-color: #4CAF50; /* Green */
     color: white;
     padding: 30px 40px;
@@ -87,34 +87,13 @@ nav ul li a {
     border-radius: 8px;
     cursor: pointer;
 }
-.explorebtn a {
-    color: white;
-    text-decoration: none;
-}
-.explorebtn:hover {
-    background-color: #45a049;
-}
 
-.maps-btn {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    padding: 30px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    
-}
-
-.maps-btn a {
+.explorebtn a, .maps-btn a {
     color: white;
     text-decoration: none;
 }
 
-.maps-btn:hover {
+.explorebtn:hover, .maps-btn:hover {
     background-color: #45a049;
 }
 
@@ -122,6 +101,8 @@ nav ul li a {
 .slider {
     width: 80%;
     margin: 50px auto;
+    background-color: #03471d; /* Deep green for slider background */
+    padding: 20px;
 }
 
 .plant {
@@ -131,7 +112,7 @@ nav ul li a {
 .slider img {
     width: 100%;
     border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
 }
 
 /* Help Button */
@@ -149,4 +130,14 @@ nav ul li a {
 
 .help-btn:hover {
     background-color: #d93c1b;
+}
+/* Retro Font Style */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Popup Modal Styles */
+.modal-content p {
+    font-size: 1.5rem; /* Larger text size */
+    color: #333;
+    font-family: 'Press Start 2P', cursive; /* Retro font */
+    font-style: italic; /* Italic text */
 }
