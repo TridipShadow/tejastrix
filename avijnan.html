@@ -14,8 +14,8 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background: url('bg.png') no-repeat center center fixed;
-            background-size: cover; /* Ensure the background image covers the whole page */
+            background: url('bg.webp') no-repeat center center fixed; /* Add video as background */
+            background-size: cover; /* Ensure the background video covers the whole page */
         }
 
         /* Navbar (Taskbar) Styling */
@@ -180,14 +180,14 @@
             margin: 0 auto;
             padding: 150px 20px 50px;
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.85);
+            background-color: rgba(255, 255, 255, 0.219);
             border-radius: 12px;
         }
 
         .content h2 {
             font-family: 'Montserrat', sans-serif;
             font-size: 36px;
-            color: #004d00;
+            color: #fafcfa;
             margin-bottom: 50px;
         }
 
@@ -199,7 +199,7 @@
         }
 
         li {
-            background-color: #fff;
+            background-color: #45ad6d70;
             margin: 15px 0;
             padding: 20px;
             font-size: 22px;
@@ -217,7 +217,7 @@
 
         a {
             text-decoration: none;
-            color: #004d00;
+            color: #f8fcf8;
             font-weight: 700;
             display: block;
         }
@@ -240,9 +240,9 @@
         }
         .leaf-animation {
             position: absolute; /* Allows for positioning off-screen */
-            top: 13rem; /* Center vertically */
+            top: 22%; /* Center vertically */
             left: 200px; /* Start off-screen to the left */
-            margin-left: 24rem;
+            margin-left: 580px;
             transform: translateY(-50%); /* Center vertically with transform */
             width: 100px; /* Adjust the size as needed */
             opacity: 0; /* Start invisible */
@@ -277,7 +277,7 @@
         <button type="button" onclick="filterPlants()">Search</button>
     </div>
     <div>
-        <a href="homepage.html" class="filter">Home</a>
+        <a href="homepage2.html" class="filter">Home</a>
     </div>
     <div class="filter-container">
         <button class="filter" onclick="toggleDropdown()">
