@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <audio id="rainAudio" loop>
+        <source src="Rain.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
@@ -300,6 +304,14 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
+        function playAudio() {
+            const rainAudio = document.getElementById('rainAudio');
+            rainAudio.play();
+            // Remove the event listener once the audio starts
+            // document.removeEventListener('click', playAudio);
+            
+        }
+        playAudio();
         $(document).ready(function(){
             $('.slider').slick({
                 infinite: true,
@@ -324,7 +336,9 @@
                 ]
             });
         });
+        
         window.onload = function() {
+            
     const quotes = [
         "\"Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship.\" - Buddha",
         "\"The mind is everything. What you think you become.\" - Buddha",
@@ -362,7 +376,10 @@
 
     const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
     document.getElementById("popupMessage").innerText = randomQuote;
+    
 
+        // Wait for the user to interact (e.g., clicking anywhere on the page)
+        document.addEventListener('click', playAudio);
     // Show the modal with animation
     const modal = document.getElementById("popupModal");
     modal.style.display = "flex";
@@ -377,15 +394,16 @@
     };
 
     // Hide the modal if clicking outside the modal content
-    window.onclick = function(event) {
-        if (event.target === modal) {
-            modal.classList.remove("show");
-            setTimeout(() => {
-                modal.style.display = "none";
-            }, 300); // Match this timeout with the animation duration
-        }
-    };
+    // window.onclick = function(event) {
+    //     if (event.target === modal) {
+    //         modal.classList.remove("show");
+    //         setTimeout(() => {
+    //             modal.style.display = "none";
+    //         }, 300); // Match this timeout with the animation duration
+    //     }
+    // };
 };
+
 
     </script>
 </body>
