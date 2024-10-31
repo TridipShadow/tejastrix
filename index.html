@@ -1,30 +1,120 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herbal Quiz</title>
-    <link rel="stylesheet" href="style2.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slider Design | X-Dev</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!--Font Awesome CDN-->
 
-<body>
+        <div class="container">
 
-    <header class="header-bar">
-        <a href="homepage.html">Home</a>
-        <h1>Herbal Quiz</h1>
-    </header>
+            <div class="slide">
 
-    <div class="quiz-container">
-        <div id="question-container">
-            <div id="question"></div>
-            <div id="options-container"></div>
+                <div class="item"
+                    style="background-image: url(alovera4.jpg);">
+                    <div class="content">
+                        <div class="name">DISEASES CURED</div>
+                        <div class="des"></div>
+                        <ul>
+                            <li><strong>Skin Burns:</strong> Aloe Vera soothes and heals minor burns.</li>
+                            <li><strong>Acne:</strong> Reduces inflammation and helps in acne treatment.</li>
+                            <li><strong>Constipation:</strong> Acts as a natural laxative for digestive relief.</li>
+                            
+                            <li><strong>Oral Health:</strong> Fights gum disease and promotes oral hygiene.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item"
+                    style="background-image: url(alovera1.jpg);">
+                    <div class="content">
+                        <div class="name">ALOEVERA</div>
+                        <div class="des">Check out the AR & VR Features...<br><b>Slide for more Info</b></div>
+                        <button>AR & VR</button>
+                    </div>
+                </div>
+                <div class="item"
+                    style="background-image: url(alovera2.jpg);">
+                    <div class="content">
+                        <div class="name">USES</div>
+                        <div class="des">
+                            <ul>
+                            <li>Promotes wound healing.</li>
+                            <li>Moisturizes and hydrates the skin.</li>
+                            <li>Contains antioxidants and antibacterial properties.</li>
+                            <li>Helps treat acne and pimples.</li>
+                            <li>Reduces dandruff and conditions hair.</li>
+                        </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="item"
+                    style="background-image: url(alovera3.jpg);">
+                    <div class="content">
+                        <div class="name">CULTIVATION</div>
+                        <div class="des"> <ul>
+                            <li><strong>Soil:</strong> Well-drained sandy or loamy soil is ideal.</li>
+                                <li><strong>Climate:</strong> Grows best in hot, dry conditions (25°C - 40°C).</li>
+                                <li><strong>Watering:</strong> Water sparingly; allow the soil to dry between watering.</li>
+                                <li><strong>Propagation:</strong> Use root suckers or offsets for planting.</li>
+                                <li><strong>Harvesting:</strong> Ready for harvest 8-10 months after planting.</li>
+                        
+                        </ul></div>
+                        
+                    </div>
+                </div>
+                <div class="item"
+                    style="background-image: url(alovera5.jpg);">
+                    <div class="content">
+                        <div class="name">PARTS USED</div>
+                        <div class="des">
+                            <ul>
+                                
+                                  <li>The primary parts used are the leaves.</li>
+                                  <li>The gel, extracted from the inner leaf pulp, is used in topical applications.</li>
+                                  <li>The latex, derived from the outer leaf skin, is used for its laxative properties.</li>
+                                
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item"
+                    style="background-image: url(alovera6.jpeg);">
+                    <div class="content">
+                        <div class="name">ACTIVE COMPOUNDS</div>
+                        <div class="des">
+                            <ul>
+                              <li>Aloe Vera contains polysaccharides like acemannan, which provide its healing properties.</li>
+                              <li>Other active compounds include vitamins A, C, and E.</li>
+                              <li>Enzymes, amino acids, and minerals contribute to its antioxidant and anti-inflammatory effects.</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="button">
+                <button class="prev"><i
+                        class="fa-solid fa-arrow-left"></i></button>
+                <button class="next"><i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
         </div>
-        <div id="result-container">
-            <div id="result"></div>
-            <button id="next-btn">Next Question</button>
-        </div>
-    </div>
-
-    <script src="script2.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
